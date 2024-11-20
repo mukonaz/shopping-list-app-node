@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Shopping List Manager</h1>
+
+        <div class="form-container">
+            <h2>Add New Item</h2>
+            <form id="addItemForm">
+                <input type="text" id="itemName" placeholder="Item Name" required>
+                <input type="number" id="itemQuantity" placeholder="Quantity" required>
+                <button type="submit">Add Item</button>
+            </form>
+        </div>
+
+        <div class="shopping-list">
+            <h2>Shopping List</h2>
+            <ul id="shoppingList"></ul>
+        </div>
+
+        <div class="update-container">
+            <h2>Update Item</h2>
+            <form id="updateItemForm">
+                <input type="text" id="updateItemName" placeholder="Item Name to Update" required>
+                <input type="number" id="updateQuantity" placeholder="New Quantity" required>
+                <button type="submit">Update Item</button>
+            </form>
+        </div>
+
+        <div class="delete-container">
+            <h2>Delete Item</h2>
+            <form id="deleteItemForm">
+                <input type="text" id="deleteItemName" placeholder="Item Name to Delete" required>
+                <button type="submit">Delete Item</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
